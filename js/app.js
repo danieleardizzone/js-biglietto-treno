@@ -50,13 +50,9 @@ else{
 }
 
 // - Stampare il prezzo del biglietto
-// ARROTONDAMENTO DEL NUMERO
-// con la funzione Mark.round togliamo tutti i numeri dopo la virgola,
-// ma nel nostro caso recuperiamo prima i primi due numeri sopo la virgola con finalPrice*100
-// e poi togliamo con la funzione i numeri dopo la virgola
-// infine ci basta dividere il risultato per 100 e avremo due numeri decimali
+// ARROTONDAMENTO DEL NUMERO alle 2 cifre decimali
 
-finalPrice = Math.round(finalPrice * 100) / 100;
+finalPrice = finalPrice.toFixed(2);
 
 console.log('Il prezzo finale è = ' + finalPrice);
 
